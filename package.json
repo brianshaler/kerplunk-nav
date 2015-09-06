@@ -1,0 +1,30 @@
+{
+  "name": "kerplunk-nav",
+  "displayName": "Navigation",
+  "description": "Default sidebar navigation for use with kerplunk-dashboard-skin",
+  "version": "0.0.1",
+  "keywords": [
+    "kerplunk-plugin",
+    "kp:Admin"
+  ],
+  "engines": {
+    "node": ">=0.10"
+  },
+  "main": "./lib/index.js",
+  "dependencies": {
+    "lodash": "^3.7.0",
+    "react": "^0.13.2",
+    "route-matcher": "^0.1.0"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.9.1",
+    "glut": "0.0.1",
+    "glut-coffee-amdify": "0.0.0",
+    "gulp": "^3.8.8",
+    "gulp-coffee": "^2.3.1",
+    "gulp-stylus": "^2.0.5"
+  },
+  "scripts": {
+    "prepublish": "rm -rf ./lib ./public && gulp"
+  }
+}
