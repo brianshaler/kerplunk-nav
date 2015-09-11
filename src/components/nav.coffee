@@ -67,5 +67,6 @@ module.exports = React.createFactory React.createClass
         DOM.ul
           className: 'sidebar-menu nav-item-holder'
         ,
-          _.map @state.navItems, (navItem, index) =>
-            NavItem _.extend {key: "nav-#{index}"}, @props, navItem, {currentUrl: @state.longestMatch}
+          if @props.isUser
+            _.map @state.navItems, (navItem, index) =>
+              NavItem _.extend {key: "nav-#{index}"}, @props, navItem, {currentUrl: @state.longestMatch}
