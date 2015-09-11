@@ -2,7 +2,7 @@
   "name": "kerplunk-nav",
   "displayName": "Navigation",
   "description": "Default sidebar navigation for use with kerplunk-dashboard-skin",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "keywords": [
     "kerplunk-plugin",
     "kp:Admin"
